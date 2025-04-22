@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capítulo 1 - La pluma del Senpai</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #0073e6;
+    }
+    section {
+      background: white;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Capítulo 1: El Encuentro</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="capitulo2.html">Capítulo 2</a>
+    </nav>
+  </header>
+
+  <section>
+    <p>Era una tarde gris cuando ella lo vio por primera vez. El viento soplaba suavemente entre las hojas secas, y el sonido de sus pasos era lo único que rompía el silencio del parque.</p>
+    <img src="https://via.placeholder.com/600x300" alt="escena del capítulo">
+    <p>Él, de pie frente al estanque, parecía una estatua. Inmóvil, con la mirada perdida en el reflejo del agua. Sus ojos brillaban con algo que ella no supo si era melancolía o simple aburrimiento.</p>
+  </section>
+</body>
+</html>
