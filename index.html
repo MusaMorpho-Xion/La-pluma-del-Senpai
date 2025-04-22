@@ -6,48 +6,99 @@
   <title>La pluma del Senpai</title>
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 700px;
-      margin: auto;
-      padding: 2em;
-      line-height: 1.6;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
     }
     header {
+      background: #24292e;
+      color: white;
+      padding: 1em;
       text-align: center;
-      margin-bottom: 2em;
     }
-    nav a {
-      margin: 0 1em;
-      text-decoration: none;
-      color: #0073e6;
+    nav {
+      background: #fff;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
     }
-    section {
+    nav button {
+      margin: 0 0.5em;
+      padding: 0.5em 1em;
+      border: none;
+      background: #eee;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .novela {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
       background: white;
-      padding: 1.5em;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin: 1em auto;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      max-width: 800px;
     }
-    img {
-      max-width: 100%;
-      margin: 1em 0;
+    .novela img {
+      width: 120px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1em;
+    }
+    .info {
+      flex: 1;
+    }
+    .info h2 {
+      margin: 0.2em 0;
+      font-size: 1.1em;
+    }
+    .info p {
+      font-size: 0.9em;
+      color: #444;
+    }
+    .info a {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 0.4em 1em;
+      background: #0073e6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .novela {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .novela img {
+        margin: 0 0 1em 0;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>La pluma del Senpai</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="capitulo1.html">Capítulo 1</a>
-      <a href="capitulo2.html">Capítulo 2</a>
-    </nav>
   </header>
+  <nav>
+    <button>Novelas en curso</button>
+    <button>Novelas terminadas</button>
+    <button>Novelas en pausa</button>
+  </nav>
 
-  <section>
-    <h2>Bienvenido</h2>
-    <p>Esta es una novela traducida sin fines de lucro. Selecciona un capítulo en el menú para comenzar a leer.</p>
-    <img src="https://via.placeholder.com/600x200" alt="imagen de portada de la novela">
+  <section class="novela">
+    <img src="villana-y-villano/portada.jpg" alt="Portada de la novela">
+    <div class="info">
+      <h2>Cuando la villana y el noble villano se enamoran ~ La noble repudiada por pactar con un espíritu sin nombre compite a diario con el joven noble ~</h2>
+      <p>Bridget, hija de un conde, hace contrato con el espíritu más débil. Tras ser repudiada por el príncipe, encuentra un inesperado aliado en Yuri, otro marginado. Así comienza su camino hacia un nuevo destino.</p>
+      <a href="villana-y-villano/index.html">Ver más</a>
+    </div>
   </section>
+
 </body>
 </html>
