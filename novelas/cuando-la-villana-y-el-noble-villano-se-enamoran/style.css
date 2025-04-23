@@ -146,3 +146,15 @@ body {
 .accordion-content a:hover {
   text-decoration: underline;
 }
+
+/* Estilo para los enlaces de navegación al final del capítulo */
+.cap-nav a {
+  color: #f8a9c0; /* rosa pastel */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cap-nav a:hover {
+  text-decoration: underline;
+  color: #ffc1d6; /* tono más claro de rosa pastel al pasar el mouse */
+}
