@@ -10,11 +10,12 @@
 
   <div class="container">
     <h1 class="title">
-  Cuando la villana y el noble villano se enamoran<br>
-  <small style="font-size: 16px; color: #ccc;">
-    ~ La noble repudiada por pactar con un espíritu sin nombre compite a diario con el joven noble ~
-  </small>
+      Cuando la villana y el noble villano se enamoran<br>
+      <small style="font-size: 16px; color: #ccc;">
+        ~ La noble repudiada por pactar con un espíritu sin nombre compite a diario con el joven noble ~
+      </small>
     </h1>
+
     <img src="portada.jpg" alt="Portada de la novela" class="cover">
 
     <p class="status"><strong>Estado:</strong> En curso</p>
@@ -51,25 +52,48 @@
 
     <p class="chapter-list"><a href="../../index.html">← Volver al inicio</a></p>
   </div>
-  
-<script>
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
 
-  document.addEventListener('selectstart', function(e) {
-    e.preventDefault();
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (
-      (e.ctrlKey && ['c', 'u', 's'].includes(e.key.toLowerCase())) ||
-      e.key === 'F12'
-    ) {
+  <!-- === PROTECCIÓN DE CONTENIDO === -->
+  <script>
+    // Bloquear clic derecho (menú contextual)
+    document.addEventListener('contextmenu', function(e) {
       e.preventDefault();
-    }
-  });
-</script>  
+    });
+
+    // Bloquear selección de texto
+    document.addEventListener('selectstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Bloquear Ctrl+C, Ctrl+U, Ctrl+S y F12
+    document.addEventListener('keydown', function(e) {
+      if (
+        (e.ctrlKey && ['c', 'u', 's'].includes(e.key.toLowerCase())) ||
+        e.key === 'F12'
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+  <!-- === MARCAR CAPÍTULO COMO LEÍDO === -->
+  <script>
+    const currentChapter = window.location.pathname.split("/").pop();
+    localStorage.setItem(currentChapter, "leído");
+  </script>
+
+  <!-- === MOSTRAR INDICADOR DE CAPÍTULOS LEÍDOS === -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a");
+      links.forEach(link => {
+        const href = link.getAttribute("href");
+        if (localStorage.getItem(href) === "leído") {
+          link.innerHTML += " <span style='color: #4caf50;'>(leído)</span>";
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
