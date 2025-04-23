@@ -141,5 +141,20 @@
     });
   </script>
 
+  <script>
+// Funcionalidad para el acordeón
+document.querySelectorAll('.accordion-toggle').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    const expanded = content.style.display === 'block';
+    content.style.display = expanded ? 'none' : 'block';
+    button.textContent = button.textContent.replace(
+      expanded ? 'colapsar' : 'expandir',
+      expanded ? 'expandir' : 'colapsar'
+    );
+  });
+});
+</script>
+
 </body>
 </html>
