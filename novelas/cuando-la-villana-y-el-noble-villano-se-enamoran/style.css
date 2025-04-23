@@ -75,48 +75,72 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #444;
-  padding: 10px 15px;
-  margin-top: 20px;
-  border-radius: 6px;
+  background: linear-gradient(90deg, #444, #333);
+  padding: 12px 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Título de parte */
 .chapter-part-title {
   font-size: 20px;
-  font-weight: bold;
   color: white;
 }
 
-/* Botón expandir/ocultar */
+/* Botón de expansión con animación e ícono */
 .accordion-toggle {
-  background-color: #666;
-  color: white;
+  background: none;
   border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
+  color: #4fc3f7;
   font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
 }
 
-.accordion-toggle:hover {
-  background-color: #888;
+.accordion-toggle::after {
+  content: "▶";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
 }
 
-/* Contenido del acordeón */
+.accordion-toggle.expanded::after {
+  transform: rotate(90deg);
+}
+
+/* Contenido oculto con animación al mostrar */
 .accordion-content {
   display: none;
-  margin-top: 10px;
-  padding-left: 20px;
+  padding: 10px 20px;
+  animation: fadeSlide 0.4s ease-out forwards;
 }
 
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo de capítulos dentro del acordeón */
 .accordion-content li {
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .accordion-content a {
-  color: #4fc3f7;
+  color: #90caf9;
   text-decoration: none;
+  font-size: 15px;
 }
 
 .accordion-content a:hover {
