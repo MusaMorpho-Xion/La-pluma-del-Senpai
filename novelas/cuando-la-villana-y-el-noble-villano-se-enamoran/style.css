@@ -1,0 +1,57 @@
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título centrado */
+.title {
+  text-align: center;
+  color: hotpink;
+  margin-bottom: 20px;
+}
+
+/* Imagen de portada centrada y más pequeña */
+.cover {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+/* Sinopsis */
+.synopsis {
+  text-align: justify;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Estado de la novela */
+.status {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Lista de capítulos centrada */
+.chapter-list {
+  text-align: center;
+}
+
+.chapter-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chapter-list li {
+  margin: 10px 0;
+}
+
+.chapter-list a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.chapter-list a:hover {
+  text-decoration: underline;
+}
