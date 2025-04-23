@@ -69,6 +69,34 @@ header h1 {
   border-radius: 4px;
 }
 
+/* Estilo para capítulos individuales */
+.contenido-capitulo {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.contenido-capitulo h2 {
+  color: hotpink;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contenido-capitulo p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.contenido-capitulo hr {
+  border: 0;
+  border-top: 1px solid #555;
+  margin: 40px 0;
+}
+
 .novela .info {
   flex: 1;
 }
