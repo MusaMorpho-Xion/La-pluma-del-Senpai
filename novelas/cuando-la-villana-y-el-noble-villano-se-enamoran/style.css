@@ -61,13 +61,15 @@ body {
   margin: 10px 0;
 }
 
-.chapter-list a {
-  color: #4fc3f7;
+/* Todos los enlaces en rosa pastel */
+a {
+  color: #f8a9c0;
   text-decoration: none;
 }
 
-.chapter-list a:hover {
+a:hover {
   text-decoration: underline;
+  color: #ffc1d6; /* más claro al pasar el mouse */
 }
 
 /* Encabezado combinado: título de parte + botón expandir */
@@ -95,7 +97,7 @@ body {
 .accordion-toggle {
   background: none;
   border: none;
-  color: #4fc3f7;
+  color: #f8a9c0;
   font-size: 14px;
   cursor: pointer;
   position: relative;
@@ -138,23 +140,10 @@ body {
 }
 
 .accordion-content a {
-  color: #90caf9;
-  text-decoration: none;
   font-size: 15px;
-}
-
-.accordion-content a:hover {
-  text-decoration: underline;
 }
 
 /* Estilo para los enlaces de navegación al final del capítulo */
 .cap-nav a {
-  color: #f8a9c0; /* rosa pastel */
-  text-decoration: none;
   font-weight: bold;
-}
-
-.cap-nav a:hover {
-  text-decoration: underline;
-  color: #ffc1d6; /* tono más claro de rosa pastel al pasar el mouse */
 }
