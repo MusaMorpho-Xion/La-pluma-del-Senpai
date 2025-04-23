@@ -62,7 +62,9 @@ header h1 {
 }
 
 .novela img {
-  max-width: 150px;
+  width: 150px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
   border-radius: 6px;
 }
 
