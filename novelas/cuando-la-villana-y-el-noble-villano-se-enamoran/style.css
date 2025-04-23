@@ -116,3 +116,35 @@ body {
   padding: 8px 12px;
   border-radius: 6px;
 }
+
+.chapter-part-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.chapter-part-title {
+  font-size: 20px;
+  color: white;
+}
+
+.accordion-toggle {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.accordion-toggle:hover {
+  background-color: #888;
+}
