@@ -4,12 +4,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  
-  /*Bloqueo de texto */
+
+  /* Bloqueo de texto */
   user-select: none;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 /* Contenedor principal */
@@ -19,14 +19,14 @@ body {
   padding: 20px;
 }
 
-/* Título centrado */
+/* Título principal centrado */
 .title {
   text-align: center;
   color: hotpink;
   margin-bottom: 20px;
 }
 
-/* Imagen de portada centrada y más pequeña */
+/* Imagen de portada */
 .cover {
   display: block;
   max-width: 300px;
@@ -47,7 +47,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* Lista de capítulos centrada */
+/* Lista de capítulos */
 .chapter-list {
   text-align: center;
 }
@@ -70,6 +70,7 @@ body {
   text-decoration: underline;
 }
 
+/* Botón del acordeón */
 .accordion-toggle {
   display: block;
   width: 100%;
@@ -83,6 +84,7 @@ body {
   margin: 10px 0;
 }
 
+/* Contenido expandido del acordeón */
 .accordion-content {
   display: none;
   margin-top: 10px;
@@ -100,4 +102,17 @@ body {
 
 .accordion-content a:hover {
   text-decoration: underline;
+}
+
+/* Estilo para los títulos de parte (ej: PRIMERA PARTE) */
+.chapter-part-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: #444;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
