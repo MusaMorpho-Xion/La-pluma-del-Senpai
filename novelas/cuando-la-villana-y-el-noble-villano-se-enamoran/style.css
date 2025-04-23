@@ -70,21 +70,40 @@ body {
   text-decoration: underline;
 }
 
-/* Botón del acordeón */
-.accordion-toggle {
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px 0;
+/* Encabezado combinado: título de parte + botón expandir */
+.chapter-part-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 6px;
 }
 
-/* Contenido expandido del acordeón */
+/* Título de parte */
+.chapter-part-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Botón expandir/ocultar */
+.accordion-toggle {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.accordion-toggle:hover {
+  background-color: #888;
+}
+
+/* Contenido del acordeón */
 .accordion-content {
   display: none;
   margin-top: 10px;
@@ -102,49 +121,4 @@ body {
 
 .accordion-content a:hover {
   text-decoration: underline;
-}
-
-/* Estilo para los títulos de parte (ej: PRIMERA PARTE) */
-.chapter-part-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  text-align: left;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  background-color: #444;
-  padding: 8px 12px;
-  border-radius: 6px;
-}
-
-.chapter-part-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #444;
-  padding: 10px 15px;
-  margin-top: 20px;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-}
-
-.chapter-part-title {
-  font-size: 20px;
-  color: white;
-}
-
-.accordion-toggle {
-  background-color: #666;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.accordion-toggle:hover {
-  background-color: #888;
 }
