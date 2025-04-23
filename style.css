@@ -132,6 +132,12 @@ header h1 {
   .novela img {
     max-width: 100%;
   }
+  /* Ajuste adicional para centrar footer en móviles */
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+}
 }
 /* Footer */
 .footer {
