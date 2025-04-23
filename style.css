@@ -133,3 +133,16 @@ header h1 {
     max-width: 100%;
   }
 }
+/* Footer */
+.footer {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  margin: 40px 0 20px 0;
+}
+
+.footer hr {
+  border: 0;
+  border-top: 1px solid #555;
+  margin-bottom: 15px;
+}
