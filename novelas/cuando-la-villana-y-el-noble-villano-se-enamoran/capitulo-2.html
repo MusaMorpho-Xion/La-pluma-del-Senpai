@@ -159,5 +159,11 @@
     </p>
   </div>
 
+  <script>
+  // Marcar este capítulo como leído
+  const currentChapter = window.location.pathname.split("/").pop();
+  localStorage.setItem(currentChapter, "leído");
+</script>
+
 </body>
 </html>
