@@ -127,15 +127,19 @@
 </div>
   </main>
 
-  <script>
+<!-- === Scripts de protección de contenido === -->
+<script>
+  // Bloquear clic derecho (menú contextual)
   document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
   });
 
+  // Bloquear selección de texto
   document.addEventListener('selectstart', function(e) {
     e.preventDefault();
   });
 
+  // Bloquear combinaciones como Ctrl+C, Ctrl+U, Ctrl+S y la tecla F12
   document.addEventListener('keydown', function(e) {
     if (
       (e.ctrlKey && ['c', 'u', 's'].includes(e.key.toLowerCase())) ||
@@ -146,8 +150,8 @@
   });
 </script>
 
-  <script>
-  // Marcar este capítulo como leído
+<!-- === Script para marcar este capítulo como leído === -->
+<script>
   const currentChapter = window.location.pathname.split("/").pop();
   localStorage.setItem(currentChapter, "leído");
 </script>
