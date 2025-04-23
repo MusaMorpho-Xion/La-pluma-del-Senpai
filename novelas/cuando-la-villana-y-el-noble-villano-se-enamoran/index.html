@@ -46,7 +46,7 @@
 
   <!-- Parte 1 -->
   <div class="accordion-section">
-    <button class="accordion-toggle">Parte 1 - expandir</button>
+    <button class="accordion-toggle">Parte uno - expandir</button>
     <ul class="accordion-content">
       <li><a href="capitulo-1.html">Capítulo 1. La tan esperada ruptura del compromiso</a></li>
       <li><a href="capitulo-2.html">Capítulo 2. Un amor que se consumió sin remedio</a></li>
@@ -149,8 +149,8 @@ document.querySelectorAll('.accordion-toggle').forEach(button => {
     const expanded = content.style.display === 'block';
     content.style.display = expanded ? 'none' : 'block';
     button.textContent = button.textContent.replace(
-      expanded ? 'colapsar' : 'expandir',
-      expanded ? 'expandir' : 'colapsar'
+      expanded ? 'ocultar' : 'expandir',
+      expanded ? 'expandir' : 'ocultar'
     );
   });
 });
