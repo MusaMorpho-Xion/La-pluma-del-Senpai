@@ -5,6 +5,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  /* Bloqueo de seleccion de texto */
+  user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
 }
 
 /* Encabezado */
