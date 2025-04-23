@@ -148,5 +148,31 @@
     });
   </script>
 
+  <!-- === FUNCIONALIDAD DE ACORDEÓN CON ANIMACIÓN === -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggles = document.querySelectorAll(".accordion-toggle");
+
+    toggles.forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const content = toggle.closest(".chapter-part-header").nextElementSibling;
+
+        const isExpanded = toggle.classList.contains("expanded");
+
+        // Ocultar si ya está expandido
+        if (isExpanded) {
+          content.style.display = "none";
+          toggle.classList.remove("expanded");
+          toggle.textContent = "expandir";
+        } else {
+          content.style.display = "block";
+          toggle.classList.add("expanded");
+          toggle.textContent = "ocultar";
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
