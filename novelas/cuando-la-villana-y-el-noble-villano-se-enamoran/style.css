@@ -69,3 +69,35 @@ body {
 .chapter-list a:hover {
   text-decoration: underline;
 }
+
+.accordion-toggle {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.accordion-content {
+  display: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.accordion-content li {
+  margin-bottom: 8px;
+}
+
+.accordion-content a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.accordion-content a:hover {
+  text-decoration: underline;
+}
