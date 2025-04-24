@@ -139,6 +139,19 @@ header h1 {
   }
 }
 }
+
+/* Estilo general para todos los enlaces */
+a {
+  color: #f8a9c0; /* rosa pastel */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffd6e0; /* rosa pastel más claro al pasar el mouse */
+  text-decoration: underline;
+}
+
 /* Footer */
 .footer {
   text-align: center;
