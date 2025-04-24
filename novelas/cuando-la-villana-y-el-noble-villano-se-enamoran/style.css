@@ -1,3 +1,4 @@
+/* Estilo base */
 body {
   background-color: #1e1e1e;
   color: white;
@@ -5,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
 
-  /* Bloqueo de texto */
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -19,14 +19,14 @@ body {
   padding: 20px;
 }
 
-/* Título principal centrado */
+/* Título principal */
 .title {
   text-align: center;
   color: hotpink;
   margin-bottom: 20px;
 }
 
-/* Imagen de portada */
+/* Portada */
 .cover {
   display: block;
   max-width: 300px;
@@ -41,7 +41,7 @@ body {
   line-height: 1.6;
 }
 
-/* Estado de la novela */
+/* Estado */
 .status {
   font-weight: bold;
   margin-bottom: 15px;
@@ -61,23 +61,23 @@ body {
   margin: 10px 0;
 }
 
-/* Todos los enlaces en rosa pastel */
+/* Enlaces en rosa pastel */
 a {
   color: #f8a9c0;
   text-decoration: none;
 }
 
 a:hover {
+  color: #ffd6e0;
   text-decoration: underline;
-  color: #ffc1d6; /* más claro al pasar el mouse */
 }
 
-/* Encabezado combinado: título de parte + botón expandir */
+/* Encabezado combinado de sección y botón */
 .chapter-part-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #444, #333);
+  background: linear-gradient(90deg, #555, #444);
   padding: 12px 20px;
   margin-top: 30px;
   border-radius: 8px;
@@ -87,13 +87,13 @@ a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Título de parte */
+/* Título de sección (Primera Parte, etc.) */
 .chapter-part-title {
   font-size: 20px;
   color: white;
 }
 
-/* Botón de expansión con animación e ícono */
+/* Botón expandir/ocultar */
 .accordion-toggle {
   background: none;
   border: none;
@@ -115,13 +115,14 @@ a:hover {
   transform: rotate(90deg);
 }
 
-/* Contenido oculto con animación al mostrar */
+/* Contenido expandido del acordeón */
 .accordion-content {
   display: none;
   padding: 10px 20px;
   animation: fadeSlide 0.4s ease-out forwards;
 }
 
+/* Animación al desplegar capítulos */
 @keyframes fadeSlide {
   0% {
     opacity: 0;
@@ -133,7 +134,7 @@ a:hover {
   }
 }
 
-/* Estilo de capítulos dentro del acordeón */
+/* Estilo individual de capítulos dentro de lista */
 .accordion-content li {
   margin-bottom: 8px;
   text-align: left;
@@ -143,14 +144,45 @@ a:hover {
   font-size: 15px;
 }
 
-/* Estilo para los enlaces de navegación al final del capítulo */
+/* Estilo navegación al final de capítulos */
 .cap-nav a {
-  color: #ffb6c1; /* rosa claro pastel */
-  text-decoration: none;
+  color: #f8a9c0;
   font-weight: bold;
 }
 
 .cap-nav a:hover {
-  text-decoration: underline;
-  color: #ffd6e0; /* rosa aún más claro al pasar el mouse */
+  color: #ffd6e0;
+}
+
+/* RESPONSIVE - Para pantallas pequeñas */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .cover {
+    max-width: 90%;
+  }
+
+  .chapter-part-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .chapter-part-title {
+    font-size: 18px;
+  }
+
+  .accordion-toggle {
+    align-self: flex-end;
+  }
+
+  .accordion-content {
+    padding-left: 10px;
+  }
+
+  .accordion-content a {
+    font-size: 14px;
+  }
 }
